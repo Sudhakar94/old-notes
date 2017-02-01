@@ -1,0 +1,13 @@
+.m30{margin-top:30px}
+.ml40{margin-left:40px}
+.mb20{margin-bottom:20px}
+.p30{padding-top:30px}
+.mauto{margin:0px auto;width:780px;text-align:center}
+table{width:400px}
+table td{height:40px;width:40px:border:1px solid white;cursor:pointer}
+.disabled{opacity:0.8;filter: alpha(opacity=80);}
+.txtb{font-weight:bold;font-size:18px;}
+.closed{display:none}
+img{cursor:pointer}
+.score{font-size:24px;margin-left:40px;}
+#play{text-align:center}

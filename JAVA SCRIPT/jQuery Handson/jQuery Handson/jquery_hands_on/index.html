@@ -1,0 +1,140 @@
+<!-- Copyright 2011 jQuery4u.com -->
+<!DOCTYPE html>
+<html>
+<title>jQuery Function Demo - jQuery4u.com</title>
+<head>
+<link rel="stylesheet" href="css/local.css" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <h3>Basic jQuery Startup</h3>
+  <div id="basic_jquery">
+	<p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+   </div>
+
+  <h3>jQuery HTML Manipulations</h3>
+  <div id="html_manip">
+  <p>This is a paragraph tag</p>
+  <span>This is a span tag</span>
+  <div class="btnBar">
+    <button id="btn1">Append text to p element</button>
+    <button id="btn2">Insert span element after each p element</button>
+    <button id="btn3">Insert content before each p element</button>
+    <button id="btn4">Remove p element</button>
+    <button id="btn5">Empty the span element</button>
+  </div>
+  <div class="btnBar">
+    <button id="btn6">Add a class name to the p element</button>
+    <button id="btn7">Remove a class name to the p element</button>
+  </div>
+  </div>
+  <h3>jQuery HTML Manipulations</h3>
+  <h4>Edit & Save values of the table</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+        <th>Column 5</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R1C1</td>
+        <td>R1C2</td>
+        <td>R1C3</td>
+        <td>R1C4</td>
+        <td>R1C5</td>
+        <td><a href="#" class="edit">edit</a></td>
+      </tr>
+      <tr>
+        <td>R2C1</td>
+        <td>R2C2</td>
+        <td>R2C3</td>
+        <td>R2C4</td>
+        <td>R2C5</td>
+        <td><a href="#" class="edit">edit</a></td>
+      </tr>
+      <tr>
+        <td>R3C1</td>
+        <td>R3C2</td>
+        <td>R3C3</td>
+        <td>R3C4</td>
+        <td>R3C5</td>
+        <td><a href="#" class="edit">edit</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>jQuery CSS Manipulations</h3>
+  <h4>Highlight the textbox on focus / Remove highlighting on blur of the text box</h4>
+  <table id="color_change">
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" id="input_txt1" /></td>
+        <td><input type="text" id="input_txt2" /></td>
+        <td><input type="text" id="input_txt3" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="input_txt4" /></td>
+        <td><input type="text" id="input_txt5" /></td>
+        <td><input type="text" id="input_txt6" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="input_txt7" /></td>
+        <td><input type="text" id="input_txt8" /></td>
+        <td><input type="text" id="input_txt9" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>jQuery Attributes </h3>
+  <h4>Select all/Deselect all</h4>
+  <ul style="list-style:none" >
+    <input type="checkbox" id="selectall" />
+    <label for="selectall">Select All</label>
+  </ul>
+  <ul style="list-style:none" id="checkbox_container">
+    <li>
+      <input type="checkbox" id="input1" />
+      <label for="input1">Checkbox 1</label>
+    </li>
+    <li>
+      <input type="checkbox" id="input2" />
+      <label for="input2">Checkbox 2</label>
+    </li>
+    <li>
+      <input type="checkbox" id="input3" />
+      <label for="input3">Checkbox 3</label>
+    </li>
+  </ul>
+    <h4>Check whether the name of the checkbox and the label name are same</h4>
+  <ul style="list-style:none" id="checkbox_container1">
+    <li>
+      <input type="checkbox" id="red" name="Red" />
+      <label for="red">Red</label>
+    </li>
+    <li>
+      <input type="checkbox" id="green" name="Blue" />
+      <label for="green">Green</label>
+    </li>
+    <li>
+      <input type="checkbox" id="yellow" name="Yellow" />
+      <label for="yellow">Yellow</label>
+    </li>
+  </ul>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script> 
+<script src="js/local.js"></script>
+</body>
+</html>

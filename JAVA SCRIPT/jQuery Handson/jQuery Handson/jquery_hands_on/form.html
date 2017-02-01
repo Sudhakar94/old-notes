@@ -1,0 +1,76 @@
+<!-- Copyright 2011 jQuery4u.com -->
+<!DOCTYPE html>
+<html>
+<title>jQuery Function Demo - jQuery4u.com</title>
+<head>
+<link rel="stylesheet" href="css/local.css" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+<form id="form1" method="post">
+  <label for="firstname">First Name:</label><br>
+  <input type="text" id="firstname" required><br>
+  <label for="lastname">Last Name:</label><br>
+  <input type="text" id="lastname" required><br>  
+  Email:<br>
+  <input type="email" name="email" required><br><label for="male">Gender:</label><br>
+ <input type="radio" name="gender" id="male" required value="male" /> <label for="male">Male</label> <input type="radio" name="gender" id="female" value="female" required /><label for="female">Female</label><br><br>
+  <input type="submit" id="formSubmit" value="Submit" />
+</form>
+
+<h2>Form Data</h2>
+
+  <table border="1" id="formTable" width="100%">
+    <thead>
+      <tr>
+        <th width="20%">First Name</th>
+        <th width="20%">Last Name</th>
+        <th width="20%">Email</th>
+        <th width="10%">Gender</th>
+        <th width="10%">Date</th> 
+        <th width="20%">Action</th>       
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+  
+<h2>Add/Remove Data</h2>
+
+
+ 
+  <ul  id="checkbox_container" class="box_container">
+    <li>
+      <input type="checkbox" id="input1" />
+      <label for="input1">Checkbox 1</label>
+    </li>
+    <li>
+      <input type="checkbox" id="input2" />
+      <label for="input2">Checkbox 2</label>
+    </li>
+    <li>
+      <input type="checkbox" id="input3" />
+      <label for="input3">Checkbox 3</label>
+    </li>
+  </ul>
+  
+  <ul class="box_container txtc">
+  <li><input type="button" value="Add" id="addRecords" /></li>
+  <li><input type="button" value="Remove" id="removeRecords" /></li>
+  </ul>
+  
+   <ul class="box_container">
+   
+   </ul>
+   
+<div class="clear"></div>
+<h2>jQuery Animate</h2>
+
+<div class="clickme">Click me</div>
+  
+</div>
+<script src="js/jquery-1.10.1.min.js"></script> 
+<script src="js/local.js"></script>
+</body>
+</html>

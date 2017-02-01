@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Can Change Images</h1>
+
+<p id="myImage">Abcd</p>
+<button type="submit" onclick="changeImage()"> Click me</button>
+
+<p>Click the to switch text.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage').innerHTML;
+    console.log(image);
+    if (image === "Abcd") {
+        myImage.innerHTML = "1234";
+    } else {
+        myImage.innerHTML = "Abcd";
+    }
+}
+</script>
+
+</body>
+</html>

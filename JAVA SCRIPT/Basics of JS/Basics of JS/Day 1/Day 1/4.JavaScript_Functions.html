@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>7. JavaScript Functions</title>
+  <script type="text/javascript">
+
+//Eg-1 : Basic function: 
+
+/*
+function myNewFunction() {
+  alert("Howdy!");
+}
+
+myNewFunction();
+*/
+
+
+//Eg-2 - function with parameters:
+
+/*
+function myNewFunction(myValue) {
+  alert("Howdy, " + myValue);
+}
+myNewFunction("pardner");
+*/
+
+
+//Eg-3 : 
+/*
+function add(firstNumber, b) {
+  return firstNumber + b;
+}
+var myResult = add(1, 2);
+alert(myResult);
+*/
+
+
+//Eg-4 - Passing more arguments: 
+
+/*
+function add() {
+  var tempValue = 0;
+  for (i = 0; i < arguments.length; i++)
+  {
+    tempValue += arguments[i];
+  }
+  return tempValue;
+}
+
+var myValue = add(1,2,3,4,5);
+alert(myValue);
+
+*/
+
+// Function literal
+/*
+var addMe = function() {
+  return arguments[0] + arguments[1];
+}
+
+var myNewValue = addMe(1,2);
+alert(myNewValue);
+*/
+
+//Eg :
+
+/*
+var myResult = (function() {
+  return arguments[0] + arguments[1];
+})(1,2,3,4);
+alert(myResult);
+*/
+
+//Eg :
+
+/*alert((function() {
+  return arguments[0] + arguments[1];
+})(1,3));
+
+*/
+
+
+  </script>
+</head>
+<body>
+  <h1>7. JavaScript Functions</h1>
+  <input type="submit" value="Click me" onclick="myNewFunction();" />
+</body>
+</html>

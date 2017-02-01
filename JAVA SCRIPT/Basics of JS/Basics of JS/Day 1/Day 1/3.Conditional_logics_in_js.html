@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3. Conditional Logic in JavaScript</title>
+  <script type="text/javascript">
+
+var someValue = 24;
+var otherValue = 23;
+// Eg - 1 : 
+// If and else if
+        /*
+        if (someValue > 30) {
+          alert("first case");
+        }
+        else if (someValue === 30) {
+          alert("second case");
+        }
+        else if (someValue === 25){
+          alert("third case");
+        }
+        else {
+          alert("fourth case");
+        }
+        */
+        /*
+        if (someValue > 20 && otherValue > 20){
+          alert("fifth case");
+        }   
+
+
+        if (someValue === 24 || otherValue === 24) {
+          alert("sixth case");
+        }
+        */
+        
+//Not Equal Operators
+        /*
+        if (someValue !== 23) {
+            alert("This is not the value we opted for");
+        }
+        */
+
+//Boolean operators
+      /*
+        someValue = false;
+        
+        if (!someValue) {
+	 {
+            alert("someValue is assigned as " + someValue);
+        }
+      */
+
+//Eg-2 : Terinary Operator
+
+/*
+var myResult = "";
+myResult = (someValue === 24) ? "equal" : "not equal";
+alert(myResult);
+*/
+
+//Eg-3 :
+//Switch Statement
+/*
+var userName = "Rimmer";
+switch (userName)
+{
+  case "Lister":
+    document.write("Care for a good curry?");
+    break;
+  case "Rimmer":
+    document.write("Welcome back, smeg head");
+    break;
+  default:
+    document.write("Are you an emohawk?");
+    break;
+}
+*/
+
+
+//Eg-4 : 
+/*
+var rightNow = new Date();
+var currentHour = rightNow.getHours();
+switch(true)
+{
+  case (currentHour > 8 && currentHour < 12):
+    document.write("Morning, sunshine!");
+    break;
+  case (currentHour === 12):
+    document.write("Lunch time!");
+    break;
+  case (currentHour > 12 && currentHour < 18):
+    document.write("Fight the urge to siesta!");
+    break;
+  default:
+    document.write("Careful Sparky, they'll think you're a hard worker!");
+    break;
+}
+*/
+  </script>
+</head>
+<body>
+  <h1>3. Conditional Logic in JavaScript</h1>
+</body>
+</html>

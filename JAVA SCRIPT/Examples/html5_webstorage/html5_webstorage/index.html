@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5 Web Storage</title>
+<link href="css/html5webstorage.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/modernizr-2.5.3.js"></script>
+<script src="js/html5webstorage.js"></script>
+</head>
+
+<body>
+<div class="main_container">
+	<div class="clear">&nbsp;</div>
+	<div class="content_container">
+		<section class="container" id="ls">
+			<header>
+				<h3>HTML5 Local Storage</h3>
+			</header>
+			<div class="content">
+				<form id="localstorage" method="post">
+					<div class="inp_details">
+						<div class="inps">Emplyee ID: <br />
+							<input type="text" name="inp_emp_id" id="inp_emp_id" value="" class="txtbox" required />
+						</div>
+						<div class="inps">Name: <br />
+							<input type="text" name="inp_name" id="inp_name" value="" class="txtbox" required />
+						</div>
+						<div class="inps">Department: <br />
+							<input type="text" name="inp_dept" id="inp_dept" value="" class="txtbox" required />
+						</div>
+						<div class="inps submit">
+							<input type="submit" name="submit" value="Store" class="button" />
+						</div>
+					</div>
+				</form>
+				<div class="storage_list">
+					<ul>
+					</ul>
+				</div>
+				<div class="clear_list">
+					<input type="button" name="clear_list" id="clear_list" value="Clear List" class="button" />
+				</div>
+			</div>
+		</section>
+		<section class="container" id="ss">
+			<header>
+				<h3>HTML5 Session Storage</h3>
+			</header>
+			<div class="content">
+				<form id="sessionstorage" method="post">
+					<div class="textarea_content">
+						<textarea name="web_ss" id="web_ss" required></textarea>
+					</div>
+					<div class="save_ss_data">
+						<input type="submit" name="savessdata" id="savessdata" value="Save Data" class="button" />
+						<span>&nbsp;</span>
+						<input type="button" name="clearsession" id="clearsession" value="Clear Data" class="button" />
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+	<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

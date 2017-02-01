@@ -1,0 +1,110 @@
+Innum full explanation type panalae sila concepts purilae only nala purinjada poturkaen................
+
+In accordionexample.ts
+First the annotation needed for Component is imported(Injection process)
+"import {Component} from 'angular2/core';"
+
+Then the accordion modules are imported from angular 2
+"import {AccordionModule} from "ng2-accordion";"
+
+The required directives annotaions are imported from the accordion.ts files to accordionexample.ts file(The directive names are the class name which are userdefined but should be same everwhere)
+"import {Accordion, AccordionGroup} from './accordion';"
+
+A Component is a class or can be said as a directive too
+It contains metadata such as
+1) Selectors- it is the tag used in HTML page where we will send our functionalities.It is userdefined
+
+2)template: This contains the DOM elements that we are going to pass to the main HTML page
+  ->"<accordion> and <accordion-group>" are the tags that we have imported earlier which is included in this component using the Directive
+
+  "directives: [Accordion, AccordionGroup]"
+with this the Component configuration for this accordion ends
+
+Coding in the template
+{
+class names for the button are given as per bootstrap
+for the click functionality we use (click) in angular2
+}
+ex:<button type="button" class="btn btn-default" (click)="removeAngular2AccordionGroup()">
+
+here the removeAngular2AccordionGroup() is an function from the class
+
+We define the content for the accordion both dynamically and statically
+<accordion> tag is userdefined which is defined indetail in the accordion.ts file
+<accordion-group> is also the same
+ngFor is used for dynamically placing the array of contents given in the class
+
+Now the Class starts
+"export" keyword is used to export the class to locations wherever ths class name is mentioned.
+
+---------------------------------------------------------------------------------
+Now the accordion.ts file
+
+Here two components are used 
+one for the <accordion> tag and other for the <accordion-group> tag
+
+First Component(that is the accordion tag)
+here the term "accordion" is passed to SELECTOR because we are passing the DOM present in the TEMPLATE to the accordion tag present in the TEMPLATE of accordion-example.ts file
+
+<ng-content></ng-content> is same as the "ng-transclude" that we have used in AngularJS while creating the custom directives. It means the presence of some contents
+ng-transclude is not present in angular 2.
+
+HOST here is used to pass the class name to the accordian tag(which is the selector) [host pathi konjam clearah thaerilae, thaerinja message panraen].
+
+the component for accordian ends and the Accordian class starts.
+
+A array group is created with name "groups" to which the AccordianGroup class is passed
+
+The addGroup function is defined which is used to push the group obtained from the AccordionGroup class into the groups array.
+
+The closeOthers function starts in which forEach directive is used to check each group in the groups. The openGroup value is passed inside the closeOthers() function which is the currently active/open div. While checking each group if it is not equal to the currently active/open div it gets closed.
+"if (group !== openGroup) {
+        group.isOpen = false;
+      }"
+
+Next removeGroup function is written which removes the group passed by the AccordionGroup class.
+---------------------------
+Second Component- <accordion-group>
+For this the SELECTOR accordion-group is given
+
+The template contains the tags to be passed to the <accordion-group>
+In this the class names of the <div> are given as per bootstrap.
+
+<div class="panel panel-default" [ngClass]="{'panel-open': isOpen}">
+When click event in the below <div> is triggered isOpen value becomes true or false and as per that the "panel-open" class will be added to this <div>.
+
+ <div class="panel-heading" (click)="toggleOpen($event)">
+ On click of this div this function in AccordionGroup class is triggered... 
+    "toggleOpen(event: MouseEvent): void {
+    event.preventDefault();
+    this.isOpen = !this.isOpen;"
+
+    If the isOpen is true then it becomes false and if isOpen is false then it becomes true.
+
+ <a href tabindex="0"><span>{{heading}}</span></a>
+ The value of this {{heading}} is actually obtained from the accordion-example.ts(But epdi values pass panirukangae thaerilae didn't understand the @Input concept)
+
+ <div class="panel-collapse" [hidden]="!isOpen">
+ When the value of the isOpen is false this div remains hidden
+
+ The component part is over now the AccordionGroup class starts
+
+  "private _isOpen:boolean = false;"
+  Here _isOpen is a user defined variable not the isOpen used in other places of the coding.
+  
+  _isOpen value is initially set to false.Now to set isOpen value 'this' keyword is used.
+
+  "ngOnDestroy() {
+    this.accordion.removeGroup(this);
+  }"
+
+  ngOnDestroy is used when a directive is to be destroyed or removed.
+  ----------------------------------------------------------------------------
+
+  In main.ts is the main typescript file in which accordion-example.ts file imported
+  this file is converted to js and compiled.
+
+  
+
+
+
